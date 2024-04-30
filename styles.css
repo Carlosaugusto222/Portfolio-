@@ -22,6 +22,8 @@ header {
     margin-right: 23px;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .image{
     width: 800px;
