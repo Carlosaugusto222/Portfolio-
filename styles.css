@@ -10,7 +10,7 @@
 /* Estilos específicos para elementos */
 
 header {
-    margin: 20px 0 80px 40px;
+    margin: 20px 0 80px 10px;
 }
 
 .ajuste-link {
@@ -22,7 +22,7 @@ header {
 .logotipo {
     width: 30px;
     height: 25px;
-    margin: 48px 10px 10px 0;
+    margin: 18px 10px 10px 5;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
