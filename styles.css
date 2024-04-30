@@ -11,7 +11,7 @@ header {
 
 }
 .ajuste-link{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     margin: 0;
 }
