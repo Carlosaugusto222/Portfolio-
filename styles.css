@@ -47,15 +47,5 @@ h1 {
 p {
     font-weight: 20px;
 }
-/* Estilos para dispositivos com largura de tela menor ou igual a 600px */
-@media screen and (max-width: 1200px) {
-    * {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    color: #989d9c;
-    margin-right: 14px;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 
