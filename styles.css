@@ -10,8 +10,9 @@ header {
 
 }
 .ajuste-link{
-        display: grid;
+    display: flex;
     justify-content: center;
+    margin: 0 auto
 }
 .logotipo {
     width: 30px;
