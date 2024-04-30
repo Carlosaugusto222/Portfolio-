@@ -23,7 +23,7 @@ header {
     cursor: pointer;
     text-decoration: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 .image{
     width: 800px;
