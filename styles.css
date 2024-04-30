@@ -6,13 +6,8 @@
 }
 
 header {
-    margin: 20px 0 80px 75px;
+    margin: 20px 0 80px 40px;
 
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .ajuste-link{
     display: flex;
