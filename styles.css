@@ -22,7 +22,6 @@ header {
 
     }
 .link-header {
-;
     font-weight: 600;
     font-size: 30px;
     line-height: 29px;
@@ -39,7 +38,7 @@ header {
 }
 main {
     display: inline-block;
-    margin-left: 250px;
+    margin-left: 450px;
     width: 530;
     height: 79px;
 }
