@@ -15,7 +15,7 @@ header {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .link-header {
-    display: grid;
+    display: flex;
     justify-content: center;
     font-weight: 600;
     font-size: 30px;
@@ -24,6 +24,7 @@ header {
     margin-right: 23px;
     cursor: pointer;
     text-decoration: none;
+    margin: auto;
 
 }
 .image{
