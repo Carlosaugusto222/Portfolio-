@@ -37,8 +37,8 @@ header {
     display: inline-block;
 }
 main {
-    display: inline-block;
-    margin-left: 450px;
+    display: flex;
+    margin-left: 250px;
     width: 530;
     height: 79px;
 }
