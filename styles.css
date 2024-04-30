@@ -7,7 +7,7 @@
 
 header {
     margin: 20px 0 80px 75px;
-    display: center;
+    display: grid;
     justify-content: center
 }
 .logotipo {
