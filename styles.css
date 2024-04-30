@@ -12,7 +12,7 @@ header {
 .ajuste-link{
     display: flex;
     justify-content: center;
-    margin: 0 auto
+    margin: auto
 }
 .logotipo {
     width: 30px;
