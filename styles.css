@@ -27,7 +27,7 @@ header {
     font-size: 30px;
     line-height: 29px;
     color: #989d9c;
-    margin-right: 23px;
+    margin-right: 13px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -39,7 +39,7 @@ header {
 }
 main {
     display: inline-block;
-    margin-left: 350px;
+    margin-left: 250px;
     width: 530;
     height: 79px;
 }
