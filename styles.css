@@ -9,6 +9,11 @@ header {
     margin: 20px 0 80px 75px;
 
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ajuste-link{
     display: flex;
     justify-content: center;
