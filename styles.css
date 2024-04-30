@@ -47,7 +47,7 @@ p {
 }
 /* Estilos para dispositivos com largura de tela menor ou igual a 600px */
 @media screen and (max-width: 600px) {
-    .link-header {
+    * {
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
@@ -56,10 +56,4 @@ p {
     cursor: pointer;
     text-decoration: none;
 }
-}
 
-/* Estilos para dispositivos com largura de tela maior que 600px */
-@media screen and (min-width: 601px) {
-  body {
-}
-    
