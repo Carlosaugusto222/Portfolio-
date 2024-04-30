@@ -46,7 +46,7 @@ p {
     font-weight: 20px;
 }
 /* Estilos para dispositivos com largura de tela menor ou igual a 600px */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     * {
     font-weight: 600;
     font-size: 20px;
