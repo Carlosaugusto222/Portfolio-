@@ -1,27 +1,31 @@
+/* Reset e estilos globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    backgroud-color: #ff0000;
+    background-color: #ff0000; /* Cor de fundo global */
 }
+
+/* Estilos específicos para elementos */
 
 header {
     margin: 20px 0 80px 40px;
-
 }
-.ajuste-link{
+
+.ajuste-link {
     display: inline-flex;
     justify-content: center;
     margin: 0;
 }
+
 .logotipo {
     width: 30px;
     height: 25px;
     margin: 48px 10px 10px 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-    }
 .link-header {
     font-weight: 600;
     font-size: 30px;
@@ -31,18 +35,21 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
-.image{
+
+.image {
     width: 800px;
     height: 600px;
     margin-left: 350px;
     display: inline-block;
 }
+
 main {
     display: flex;
     margin-left: 250px;
-    width: 530;
+    width: 530px; /* Adicione unidade de medida (px) */
     height: 79px;
 }
+
 h1 {
     font-family: "Righteous", sans-serif;
     font-weight: 900;
@@ -50,8 +57,76 @@ h1 {
     line-height: 122px;
     color: #464646;
 }
+
 p {
-    font-weight: 20px;
+    font-size: 20px; /* Corrigido de font-weight para font-size */
 }
 
+/* Media queries para estilos responsivos */
+
+@media screen and (max-width: 1200px) {
+    .image {
+        width: 600px;
+        height: 450px;
+        margin-left: 150px;
+    }
+
+    main {
+        margin-left: 100px;
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 85px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        width: 400px;
+        height: 300px;
+        margin-left: 50px;
+    }
+
+    main {
+        margin-left: 50px;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        width: 300px;
+        height: 225px;
+        margin-left: 20px;
+    }
+
+    main {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
 
