@@ -32,6 +32,7 @@ header {
     line-height: 29px;
     color: #989d9c;
     margin-right: 13px;
+    margin-left: 10px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -61,72 +62,3 @@ h1 {
 p {
     font-size: 20px; /* Corrigido de font-weight para font-size */
 }
-
-/* Media queries para estilos responsivos */
-
-@media screen and (max-width: 1200px) {
-    .image {
-        width: 600px;
-        height: 450px;
-        margin-left: 150px;
-    }
-
-    main {
-        margin-left: 100px;
-        width: 400px;
-    }
-
-    h1 {
-        font-size: 70px;
-        line-height: 85px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-
-@media screen and (max-width: 768px) {
-    .image {
-        width: 400px;
-        height: 300px;
-        margin-left: 50px;
-    }
-
-    main {
-        margin-left: 50px;
-        width: 300px;
-    }
-
-    h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .image {
-        width: 300px;
-        height: 225px;
-        margin-left: 20px;
-    }
-
-    main {
-        margin-left: 20px;
-        width: 200px;
-    }
-
-    h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-
