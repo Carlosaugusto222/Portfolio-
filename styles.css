@@ -38,8 +38,8 @@ header {
 }
 
 .image {
-    width: 800px;
-    height: 600px;
+    width: 400px;
+    height: auto;
     margin-left: 350px;
     display: inline-block;
 }
