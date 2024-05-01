@@ -1,14 +1,10 @@
-/* Reset e estilos globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff; /* Cor de fundo global */
+    background-color: #ffffff;
 }
-
-/* Estilos específicos para elementos */
-
 header {
     margin: 20px 0 80px 10px;
 }
@@ -39,7 +35,7 @@ header {
 
 .image {
     width: 400px;
-    height: auto;
+    height: 300px;
     margin-left: 350px;
     display: inline-block;
 }
@@ -48,18 +44,18 @@ main {
     display: flex;
     justify-content: center;
     margin-left: 250px;
-    width: 530px; /* Adicione unidade de medida (px) */
+    width: 530px;
     height: 79px;
 }
 
 h1 {
     font-family: "Righteous", sans-serif;
-    font-weight: 900;
-    font-size: 100px;
+    font-weight: 500;
+    font-size: 60px;
     line-height: 122px;
     color: #464646;
 }
 
 p {
-    font-size: 20px; /* Corrigido de font-weight para font-size */
+    font-size: 20px;
 }
