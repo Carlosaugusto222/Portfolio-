@@ -46,6 +46,8 @@ header {
 
 main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 250px;
     width: 530px; /* Adicione unidade de medida (px) */
     height: 79px;
