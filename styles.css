@@ -44,10 +44,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza na vertical */
-    align-items: center; /* Centraliza na horizontal */
     margin-left: 250px;
     width: 530px;
-    height: 79px;
+    height: 200px;
 }
 
 h1 {
