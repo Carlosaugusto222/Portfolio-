@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 header {
     margin: 20px 0 80px 10px;
 }
