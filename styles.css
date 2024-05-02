@@ -10,6 +10,8 @@ body {
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
+    height: 100vh; /* 100% da altura da viewport */
+    width: auto; /* Largura automática */
 }
 header {
     margin: 20px 0 80px 10px;
