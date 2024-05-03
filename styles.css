@@ -15,6 +15,20 @@ body {
     background-color: #ffffff;
 }
 
+    .background-container img {
+        position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ajusta a largura da imagem para ocupar todo o contêiner */
+        height: 100%; /* Ajusta a altura da imagem para ocupar todo o contêiner */
+        object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
+        z-index: -1;
+        opacity: 0.7;
+}
+.hidden {
+    display: none;
+}
+
 header {
     margin: 20px 10 80px 10px;
 }
@@ -22,6 +36,13 @@ header {
 .ajuste-link {
     display: inline-flex;
     align-items: center;
+}
+.whatsapp-icon {
+    width: 200px;
+    height: auto;
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
 }
 
 .logotipo {
@@ -41,7 +62,7 @@ header {
     text-decoration: none;
 }
 
-.image {
+.menino-lendo {
     width: 300px;
     height: 180px;
     margin-left: 20px; /* Ajuste a margem conforme necessário */
