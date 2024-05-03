@@ -5,38 +5,68 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-    <title>Learning Pixel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-
-      <div class="ajuste-link">
-        <img src="./assets/logo.png.png" class="logotipo" alt="logo">
-        <a href="#" class="link-header">Home</a>
-        <a href="#" class="link-header">About</a>
-        <a href="#" class="link-header">Projects</a>
-        <a href="#" class="link-header">Contact</a>
-      </div>
+        <div class="ajuste-link">
+            <img src="./assets/logo.png.png" class="logotipo" alt="logo">
+            <a href="#" class="link-header" data-tab="home">Home</a>
+            <a href="#" class="link-header" data-tab="about">About</a>
+            <a href="#" class="link-header" data-tab="projects">Projects</a>
+            <a href="#" class="link-header" data-tab="contact">Contact</a>
+        </div>
     </header>
     <main>
-        <h1>Learning<br>
-            With Pixel</h1>
-        <p>I have been studying front-end programming for almost a year now. I am studying analysis and systems development at Faculdade das Américas (FAM). I also study at Alura and DevClub. I am passionate and highly motivated about front-end development. My experience spans over 10 years as an electronics technician specializing in Apple products at a technical assistance center located in Palmares, Pernambuco. I currently reside in Ribeirão and am available for internships or remote work. I have projects developed during my studies on GitHub.<br>
-Estudo programação front-end há quase 1 ano. Estou cursando análise e desenvolvimento de sistemas na Faculdade das Américas (FAM). Também estudo na Alura e no DevClub. Sou apaixonado e muito motivado pelo desenvolvimento front-end. Tenho mais de 10 anos de experiência como técnico em eletrônica especializado em produtos da Apple em um centro de assistência técnica localizado em Palmares, Pernambuco. Atualmente, moro em Ribeirão e estou disponível para estágios ou trabalho remoto. Tenho projetos desenvolvidos durante meus estudos no GitHub.
-<br>
-   <br>
----
-
-</p>
+        <h1>Explorando o Mundo do<br>
+            Desenvolvimento Web</h1>
+        <div id="tab-home" class="tab-content active">
+            <p>I am a dedicated professional in front-end development, imbued with a fervent passion for continuous improvement and technical excellence. With a solid academic background in systems analysis and development from the renowned Faculdade das Américas (FAM), coupled with over a decade of experience as an electronics technician specializing in Apple products at a technical assistance center located in Palmares, Pernambuco, I have crafted a singular and multifaceted trajectory. Furthermore, I maintain an unrelenting pursuit of knowledge, actively engaging in courses on the Alura platform and at DevClub. This rich journey has culminated in the creation and contribution to several notable projects hosted on my GitHub account. Currently based in Ribeirão, I eagerly seek challenging opportunities that allow me to apply my expertise in front-end development, whether in the form of internships or remote work.</p>
+            <p>Sou um profissional dedicado ao desenvolvimento front-end, imbuido de uma paixão ardente pelo aprimoramento contínuo e pela excelência técnica. Com uma sólida formação acadêmica em análise e desenvolvimento de sistemas pela renomada Faculdade das Américas (FAM), aliada a uma vasta experiência de mais de uma década como técnico em eletrônica, especializado em produtos da Apple, em um centro de assistência técnica situado em Palmares, Pernambuco, construí uma trajetória singular e multifacetada. Além disso, mantenho uma busca incessante pelo conhecimento, participando ativamente de cursos na plataforma Alura e no DevClub. Essa rica jornada culminou na criação e contribuição para diversos projetos de destaque hospedados em minha conta no GitHub. Atualmente, estou baseado em Ribeirão e anseio por oportunidades desafiadoras que permitam aplicar minha expertise em desenvolvimento front-end, seja em forma de estágio ou trabalho remoto.</p>
+        </div>
+        <div id="tab-about" class="tab-content">
+            <p>About</p>
+        </div>
+        <div id="tab-projects" class="tab-content">
+            <a href="#">https://github.com/Carlosaugusto222?tab=repositories</a>
+            <p>Explore our latest projects.</p>
+        </div>
+        <div id="tab-contact" class="tab-content">
+            <p>Get in touch with us.</p>
+        </div>
         <button class="botton-mais">Learn more</button>
+        <a href="https://wa.me/5581981495825">
+            <img class="whatsapp-icon" src="./assets/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+        <div class="background-container">
+            <img src="./assets/imagem.jpeg" alt="Descrição da imagem">
+        </div>
     </main>
-    <img src="./assets/image.png.png" alt="menino-lendo">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.link-header');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabId = this.getAttribute('data-tab');
+                    const activeTab = document.querySelector('.tab-content.active');
+                    activeTab.classList.remove('active');
+                    document.getElementById(`tab-${tabId}`).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
