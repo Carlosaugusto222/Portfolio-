@@ -9,10 +9,8 @@ body {
     display: flex;
     flex-direction: column; /* Ajuste para coluna */
     justify-content: space-between;
+    width: 100vh;
     height: 100vh;
-    gap: 20px;
-    height: 100vh;
-    background-color: #ffffff;
 }
 
     .background-container img {
@@ -20,10 +18,10 @@ body {
         top: 0;
         left: 0;
         width: 100%; /* Ajusta a largura da imagem para ocupar todo o contêiner */
-        height: 100%; /* Ajusta a altura da imagem para ocupar todo o contêiner */
+        height: auto; /* Ajusta a altura da imagem para ocupar todo o contêiner */
         object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
         z-index: -1;
-        opacity: 0.7;
+        opacity: 0;
 }
 .hidden {
     display: none;
