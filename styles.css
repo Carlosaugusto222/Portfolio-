@@ -23,9 +23,6 @@ body {
         z-index: -1;
         opacity: 0;
 }
-.hidden {
-    display: none;
-}
 
 header {
     margin: 20px 10 80px 10px;
