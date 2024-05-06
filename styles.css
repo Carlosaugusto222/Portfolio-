@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    background-image: url('imagem.jpg'); /* substitua 'sua-imagem.jpg' pelo nome do seu arquivo de imagem */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 
 body {
     display: flex;
@@ -13,16 +18,16 @@ body {
     height: 100vh;
 }
 
-    .background-container img {
+    /*.background-container img {
         position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
-        top: 0;
+        /*top: 0;
         left: 0;
         width: 100vw; /* Ajusta a largura da imagem para ocupar todo o contêiner */
-        height: 100vh; /* Ajusta a altura da imagem para ocupar todo o contêiner */
-        object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
-        z-index: -1;
+        /*height: 100vh; /* Ajusta a altura da imagem para ocupar todo o contêiner */
+        /*object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
+        /*z-index: -1;
         opacity: 0;
-}
+} */
 
 header {
     margin: 20px 10 80px 10px;
