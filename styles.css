@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    background-image: url('imagem.jpg'); /* substitua 'sua-imagem.jpg' pelo nome do seu arquivo de imagem */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 
@@ -14,6 +11,10 @@ body {
     display: flex;
     flex-direction: column; /* Ajuste para coluna */
     justify-content: space-between;
+    background-image: url('imagem.jpg'); /* substitua 'sua-imagem.jpg' pelo nome do seu arquivo de imagem */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
