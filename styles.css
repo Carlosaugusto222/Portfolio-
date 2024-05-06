@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column; /* Ajuste para coluna */
     justify-content: space-between;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -17,8 +17,8 @@ body {
         position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
         top: 0;
         left: 0;
-        width: 100%; /* Ajusta a largura da imagem para ocupar todo o contêiner */
-        height: auto; /* Ajusta a altura da imagem para ocupar todo o contêiner */
+        width: 100vw; /* Ajusta a largura da imagem para ocupar todo o contêiner */
+        height: 100vh; /* Ajusta a altura da imagem para ocupar todo o contêiner */
         object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
         z-index: -1;
         opacity: 0;
@@ -55,12 +55,6 @@ header {
     margin-left: 13px;
     cursor: pointer;
     text-decoration: none;
-}
-
-.menino-lendo {
-    width: 300px;
-    height: 180px;
-    margin-left: 20px; /* Ajuste a margem conforme necessário */
 }
 
 main {
