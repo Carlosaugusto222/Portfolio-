@@ -12,9 +12,7 @@ body {
     flex-direction: column; /* Ajuste para coluna */
     justify-content: space-between;
      /* substitua 'sua-imagem.jpg' pelo nome do seu arquivo de imagem */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     width: 100vw;
     height: 100vh;
 }
@@ -24,6 +22,9 @@ body {
         top: 0;
         left: 0;
         background-image: url('imagem.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         width: 100vw; /* Ajusta a largura da imagem para ocupar todo o contêiner */
         height: 100vh; /* Ajusta a altura da imagem para ocupar todo o contêiner */
         object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
