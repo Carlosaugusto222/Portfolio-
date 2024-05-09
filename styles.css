@@ -18,9 +18,7 @@ body {
 }
 
     .background-container img {
-        position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
-        top: 0;
-        left: 0;
+
         background-image: url('imagem.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -30,6 +28,9 @@ body {
         object-fit: cover; /* Mantém a proporção da imagem e a corta para cobrir todo o contêiner */
         z-index: -1;
         opacity: 0;
+        position: absolute; 
+        top: 0;
+        left: 0;
 }
 
 header {
