@@ -3,6 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .button-more {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="ajuste-link">
+            <a href="#" class="link-header" data-tab="home">Home</a>
+            <a href="#" class="link-header" data-tab="about">About</a>
+            <a href="#" class="link-header" data-tab="projects">Projects</a>
+            <a href="#" class="link-header" data-tab="contact">Contact</a>
+        </div>
+    </header>
+    <main>
+        <h1>Exploring the World of<br>
+            Web development</h1>
+        <div id="tab-home" class="tab-content active">
+            <p id="partialText">I am a dedicated professional in front-end development, imbued with a fervent passion for continuous improvement and technical excellence. With a solid academic background in systems analysis and development from the renowned Faculdade das Américas (FAM), coupled with over a decade of experience as an electronics technician specializing in Apple products at a technical assistance center located in Palmares, Pernambuco, I have crafted a singular and multifaceted trajectory. Furthermore, I maintain an unrelenting pursuit of knowledge, actively engaging in courses on the Alura platform and at DevClub. This rich journey has culminated in the creation and contribution to several notable projects hosted on my GitHub account. Currently based in Ribeirão, I eagerly seek challenging opportunities that allow me to apply my expertise in front-end development, whether in the form of internships or remote work.</p>
+            <p id="fullText" style="display: none;">Sou um profissional dedicado ao desenvolvimento front-end, imbuido de uma paixão ardente pelo aprimoramento contínuo e pela excelência técnica. Com uma sólida formação acadêmica em análise e desenvolvimento de sistemas pela renomada Faculdade das Américas (FAM), aliada a uma vasta experiência de mais de uma década como técnico em eletrônica, especializado em produtos da Apple, em um centro de assistência técnica situado em Palmares, Pernambuco, construí uma trajetória singular e multifacetada. Além disso, mantenho uma busca incessante pelo conhecimento, participando ativamente de cursos na plataforma Alura e no DevClub. Essa rica jornada culminou na criação e contribuição para diversos projetos de destaque hospedados em minha conta no GitHub. Atualmente, estou baseado em Ribeirão e anseio por oportunidades desafiadoras que permitam aplicar minha expertise em desenvolvimento front-end, seja em forma de estágio ou trabalho remoto.</p>
+        </div>
+        <div id="tab-about" class="tab-content active">
+            <p>About</p>
+        </div>
+        <div id="tab-projects" class="tab-content">
+            <a href="#">https://github.com/Carlosaugusto222?tab=repositories</a>
+            <p>Explore our latest projects.</p>
+        </div>
+        <div id="tab-contact" class="tab-content">
+            <a href="https://wa.me/81981495825">
+            <img class="whatsapp-icon" src="whatsapp-icon.png" alt="WhatsApp imagem">
+            </a>
+        </div>
+    
+        <button class="button-more" onclick="toggleText()">Learn more</button>
+        <a class="whatsapp-icon" href="https://wa.me/81981495825">
+            <img class="whatsapp-icon" src="whatsapp-icon.png" alt="WhatsApp imagem">
+            </a>
+
+    </main>
+    <script>
+        function toggleText() {
+            var partialText = document.getElementById("partialText");
+            var fullText = document.getElementById("fullText");
+            if (partialText.style.display === "none") {
+                partialText.style.display = "block";
+                fullText.style.display = "none";
+                document.querySelector('.button-more').innerText = "Learn more";
+            } else {
+                partialText.style.display = "none";
+                fullText.style.display = "block";
+                document.querySelector('.button-more').innerText = "Show less";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -67,3 +143,4 @@
     </script>
 </body>
 </html>
+-- >
